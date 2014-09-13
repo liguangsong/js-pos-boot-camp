@@ -1,0 +1,26 @@
+{
+    "show_name": "POS机 - V1.1",
+    "type": "normal",
+    "point": 200,
+
+    "simple_desc": "要求基本跟V1一样，只是要求引入LoDash和moment.js，一个用来减少圈复杂度，一个用来打印时间",
+    "desc_file": true,
+    "answer_file": true,
+
+    "project_dir": "/javascript_template",
+    "specs_dir": "/specs",
+    "files": [
+        {
+            "name": "practice.js",
+            "path": "/javascript_template/section_1/practice_11"
+        }
+    ],
+    "runner": {
+        "name": "challenge.html",
+        "path": "/javascript_template",
+        "type":"terminal",
+        "src":"browser",
+        "run_files": ["section_1/practice_11/practice.js", "../specs/section_1/practice_11"]
+    },
+    "order": 9
+}

@@ -1,0 +1,26 @@
+{
+    "show_name": "POS收银机 - V0.1",
+    "type": "normal",
+    "point": 200,
+
+    "simple_desc": "还是很简单的题目，除了输入的内容发生了变化，别的并没有发生变化",
+    "desc_file": true,
+    "answer_file": true,
+
+    "project_dir": "/javascript_template",
+    "specs_dir": "/specs",
+    "files": [
+        {
+            "name": "practice.js",
+            "path": "/javascript_template/section_1/practice_9"
+        }
+    ],
+    "runner": {
+        "name": "challenge.html",
+        "path": "/javascript_template",
+        "type":"terminal",
+        "src":"browser",
+        "run_files": ["section_1/practice_9/practice.js", "../specs/section_1/practice_9"]
+    },
+    "order": 8
+}

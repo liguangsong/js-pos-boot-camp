@@ -1,0 +1,20 @@
+{
+    "show_name": "POS机web版-angular.js实现",
+    "type": "super",
+    "point": 200,
+
+    "desc": "angular.js版POS机，练习angularjs",
+    "tips": "no tips",
+    "answer": "no answer",
+
+    "project_dir": "/javascript_template",
+    "specs_dir": "/specs",
+    "answer_tar": "1.zip",
+    "spec": [
+        {
+            "name": "index.html",
+            "path": "/super/section_3/"
+        }
+    ],
+    "order": 0
+}

@@ -1,0 +1,26 @@
+{
+    "show_name": "POS收银机 - V0.2",
+    "type": "normal",
+    "point": 200,
+
+    "simple_desc": "比0.1版的输入内容更简化了，要求根据barcode来寻找到底是哪个货物，并生成小票",
+    "desc_file": true,
+    "answer_file": true,
+
+    "project_dir": "/javascript_template",
+    "specs_dir": "/specs",
+    "files": [
+        {
+            "name": "practice.js",
+            "path": "/javascript_template/section_1/practice_10"
+        }
+    ],
+    "runner": {
+        "name": "challenge.html",
+        "path": "/javascript_template",
+        "type":"terminal",
+        "src":"browser",
+        "run_files": ["section_1/practice_10/practice.js", "../specs/section_1/practice_10"]
+    },
+    "order": 9
+}
