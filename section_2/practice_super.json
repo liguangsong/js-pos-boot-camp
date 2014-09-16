@@ -10,11 +10,9 @@
     "project_dir": "/super/section_2",
     "specs_dir": "/specs",
     "answer_tar": "1.zip",
-    "spec": [
-        {
-            "name": "index.html",
-            "path": "/super/section_2/"
-        }
-    ],
+    "runner": {
+        "name": "index.html",
+        "path": "/super/section_2/app/"
+    },
     "order": 0
 }
