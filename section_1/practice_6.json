@@ -1,9 +1,9 @@
 {
-    "show_name": "消除单例",
+    "show_name": "POS机 - V2",
     "type": "normal",
     "point": 200,
 
-    "simple_desc": "demo.",
+    "simple_desc": "要求基本跟V1.1一样，只是要求用面向对象的方式来做",
     "desc_file": true,
     "answer_file": true,
 
