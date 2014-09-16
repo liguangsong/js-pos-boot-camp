@@ -11,7 +11,7 @@
     "specs_dir": "/specs",
     "files": [
         {
-            "name": "practice.js",
+            "name": "main.js",
             "path": "/javascript_template/section_1/practice_1"
         }
     ],
@@ -20,7 +20,7 @@
         "path": "/javascript_template",
         "type":"terminal",
         "src":"browser",
-            "run_files": ["section_1/practice_1/practice.js", "../specs/section_1/practice_1"]
+        "run_files": ["../javascript_template/section_1/practice_1/main", "../specs/section_1/practice_1"]
     },
     "order": 0
 }

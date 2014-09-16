@@ -11,8 +11,12 @@
     "specs_dir": "/specs",
     "files": [
         {
-            "name": "practice.js",
-            "path": "/javascript_template/section_1/practice_11"
+            "name": "main.js",
+            "path": "/javascript_template/section_1/practice_6"
+        },
+        {
+            "name": "fixtures.js",
+            "path": "/javascript_template/section_1/practice_6"
         }
     ],
     "runner": {
@@ -20,7 +24,7 @@
         "path": "/javascript_template",
         "type":"terminal",
         "src":"browser",
-        "run_files": ["section_1/practice_11/practice.js", "../specs/section_1/practice_11"]
+        "run_files": ["../javascript_template/section_1/practice_6/fixtures", "../javascript_template/section_1/practice_6/main", "../specs/section_1/practice_6"]
     },
     "order": 5
 }
