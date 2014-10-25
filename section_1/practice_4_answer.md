@@ -1,4 +1,5 @@
-答案是:
+答案是:  
+
         function printInventory(inputs) {
             var cart =[];
             for(var i in inputs){
