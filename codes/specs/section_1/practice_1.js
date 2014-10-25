@@ -2,7 +2,7 @@ describe('practice-1-1', function () {
     var inputs;
 
     beforeEach(function () {
-        var inputs = [
+        inputs = [
             {
                 barcode: 'ITEM000000',
                 name: '可口可乐',
@@ -29,17 +29,17 @@ describe('practice-1-1', function () {
 
     it('should print correct text', function () {
 
-        spyOn(console, 'log');
+//        spyOn(console, 'log');
 
         printInventory(inputs);
 
         var expectText =
             '***<没钱赚商店>购物清单***\n' +
-            '名称：可口可乐，数量：5瓶，单价：3.00(元)，小计：15.00(元)\n' +
-            '名称：雪碧，数量：2瓶，单价：3.00(元)，小计：6.00(元)\n' +
-            '名称：电池，数量：1个，单价：2.0(元)，小计：2(元)\n' +
+            '名称:可口可乐,数量：5瓶,单价:3.00(元),小计:15.00(元)\n' +
+            '名称:雪碧,数量:2瓶,单价:3.00(元),小计:6.00(元)\n' +
+            '名称:电池,数量:1个,单价:2.0(元),小计:2(元)\n' +
             '----------------------\n' +
-            '总计：23.00(元)\n' +
+            '总计:23.00(元)\n' +
             '**********************';
 
           expect(console.log).toHaveBeenCalledWith(expectText);
