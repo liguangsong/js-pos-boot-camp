@@ -1,7 +1,7 @@
 //TODO: 请补完下面的函数以完成需求.
 function printInventory(inputs) {
     var cart =[];
-    for(var i=0; i<inputs.length; i++){
+    for(var i in inputs){
         parseCode(inputs[i],function(parseResult){
             var good = findGoodByBarcode(parseResult.barcode);
             if(good){
@@ -9,16 +9,19 @@ function printInventory(inputs) {
                 addCart(good,cart);
             }
         });
-        console.log(i);
     }
-    console.log(cart);
+    var result = '***<没钱赚商店>购物清单***\n';
+    for(var x in cart){
+        var item = cart[x];
+        result += '名称:'+item.name+',数量:'+item.num+item.unit+',单价:'+item.price+'(元),小计:'+item.num*item.price+'(元)\n';
+    }
 }
 
 function parseCode(code,callback){
     var temp = code.split('-');
     var parseResutl = {
         barcode:temp[0],
-        num :temp[1]?temp[1]:0
+        num :temp[1]?temp[1]:1
     };
     callback(parseResutl);
 }
@@ -49,4 +52,9 @@ function inCart(good,cart){
         }
     }
     return null;
+}
+
+function inPromotion(good){
+    var promotion = loadPromotions();
+
 }
