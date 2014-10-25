@@ -3,10 +3,11 @@
 ```javascript
 function printInventory(inputs) {
 
-    var buyList = [],
-        totalPrice = 0,
-        item = {},
-        itemDescs = [];
+    var totalPrice = 0, 
+        itemDescs = [],
+        buyList = [],
+        item = {};
+        
 
 
     for (var i = 0, maxInputs = inputs.length; i < maxInputs; i++) {
@@ -45,5 +46,4 @@ function printInventory(inputs) {
             '**********************';
     console.log(resultText);
 }
-
 ```
