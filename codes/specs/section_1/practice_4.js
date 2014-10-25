@@ -19,7 +19,7 @@ describe('practice-1-4', function () {
 
     it('should print correct text', function () {
 
-//        spyOn(console, 'log');
+        spyOn(console, 'log');
 
         printInventory(inputs);
 
