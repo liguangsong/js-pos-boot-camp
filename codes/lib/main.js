@@ -21,7 +21,7 @@ function runner(load_files) {
 
 require(['jquery', 'underscore'], function () {
     $(document).ready(function () {
-        console.log('document on ready');
+        //console.log('document on ready');
         if (parent.load_files) {
            return runner(parent.load_files);
         }

@@ -29,8 +29,6 @@ describe('practice-1-1', function () {
 
     it('should print correct text', function () {
 
-        spyOn(console, 'log');
-
         printInventory(inputs);
 
         var expectText =
@@ -42,6 +40,6 @@ describe('practice-1-1', function () {
             '总计:23.00(元)\n' +
             '**********************';
 
-          expect(console.log).toHaveBeenCalledWith(expectText);
+          expect(logs[0]).toBe(expectText);
     });
 });

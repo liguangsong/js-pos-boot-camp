@@ -21,8 +21,6 @@ describe('practice-1-5', function () {
 
     it('should print correct text', function () {
 
-        spyOn(console, 'log');
-
         printInventory(inputs);
 
         var currentDate = new Date(),
@@ -50,6 +48,6 @@ describe('practice-1-5', function () {
             '节省:7.50(元)\n' +
             '**********************';
 
-        expect(console.log).toHaveBeenCalledWith(expectText);
+        expect(logs[0]).toBe(expectText);
     });
 });
