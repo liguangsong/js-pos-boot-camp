@@ -103,5 +103,6 @@ POS收银机 版本：v1.1
    ]
    ```
 
-4. 应学习并善于使用各种流行浏览器所附带的开发人员工具中的控制台（Console）功能。
-5. 有关于[Lo-Dash](http://lodash.com)和[moment.js](http://momentjs.com)的使用方法，请查阅各自官方网站。
+4. 使用console.log输出(仅允许使用一次)
+5. 应学习并善于使用各种流行浏览器所附带的开发人员工具中的控制台（Console）功能。
+6. 有关于[Lo-Dash](http://lodash.com)和[moment.js](http://momentjs.com)的使用方法，请查阅各自官方网站。

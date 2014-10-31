@@ -71,5 +71,6 @@ POS收银机 版本：v2
 2. 每一个商品对象的结构请见```item.js```；
 3. 可使用```loadPromotions()```方法获取全部的促销信息，该方法返回结果为一个包含有促销信息对象的数组；
 4. 每一个促销信息对象的结构请见```promotion.js```；
-5. 应学习并善于使用各种流行浏览器所附带的开发人员工具中的控制台（Console）功能；
-6. 有关于[Lo-Dash](http://lodash.com)和[moment.js](http://momentjs.com)的使用方法，请查阅各自官方网站。
+5. 使用console.log输出(仅允许使用一次);
+6. 应学习并善于使用各种流行浏览器所附带的开发人员工具中的控制台（Console）功能；
+7. 有关于[Lo-Dash](http://lodash.com)和[moment.js](http://momentjs.com)的使用方法，请查阅各自官方网站。
