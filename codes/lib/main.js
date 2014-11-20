@@ -7,26 +7,49 @@ function runner(load_files) {
             },
 
             'reporter': {
-              deps: ['jasmine', 'boot']
+                deps: ['jasmine', 'boot']
             }
         }
     });
 
+    var requireQueue = function(modules, callback) {
+        function load(queue, results) {
+            if (queue.length) {
+                require([queue.shift()], function(result) {
+                    results.push(result);
+                    load(queue, results);
+                });
+            } else {
+                callback.apply(null, results);
+            }
+        }
+
+        load(modules, []);
+    };
+
     require(['jasmine', 'boot', 'reporter'], function () {
-        require(load_files, function () {
+        requireQueue(load_files, function () {
             jasmine.getEnv().execute();
         });
     });
 }
 
-require(['jquery', 'underscore'], function () {
+require(['jquery', 'underscore', 'console'], function () {
     $(document).ready(function () {
-        //console.log('document on ready');
+//        console.log('document on ready');
+
+        window.onerror = function() {
+            console.log(arguments[0]);
+        };
+
         if (parent.load_files) {
-           return runner(parent.load_files);
+            return runner(parent.load_files);
         }
 //        alert('please execute spec with runner function by load_files params');
     });
 });
+
+
+
 
 
