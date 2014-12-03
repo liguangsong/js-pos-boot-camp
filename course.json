@@ -9,7 +9,7 @@
             "desc": "JS Console是一个类似于网页JS控制台'console'的页面应用,是本站用来助力JS教学练习的一个助手工具,你可以在里面毫无顾虑的操练JS代码,而没有后顾之忧.",
             "href": "/super_show/js_console.html"
         },
-        "order": 5,
+        "order": 30,
         "ico": "/images/JS.PNG",
         "title_ico": "/images/Javascript.png",
         "version": "2.0.13"
