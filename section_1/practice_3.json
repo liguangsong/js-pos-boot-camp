@@ -24,7 +24,7 @@
         "path": "/javascript_template",
         "type":"terminal",
         "src":"browser",
-        "run_files": ["../javascript_template/section_1/practice_3/fixtures", "../javascript_template/section_1/practice_3/main", "../specs/section_1/practice_3"]
+        "run_files": ["../javascript_template/section_1/practice_3/fixtures.js", "../javascript_template/section_1/practice_3/main.js", "../specs/section_1/practice_3"]
     },
     "order": 2
 }
