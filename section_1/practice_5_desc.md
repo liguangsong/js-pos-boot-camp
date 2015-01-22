@@ -71,6 +71,7 @@ javascript
 2. 每一个商品对象的结构如下（样例）：
 
   javascript
+
    		{
       		barcode: 'ITEM000000',
       		name: '可口可乐',
@@ -82,6 +83,7 @@ javascript
 3. 可使用```loadPromotions()```方法获取全部的促销信息，该方法返回结果为一个包含有促销信息对象的数组（样例）：
 
    javascript
+
    		[
       		{
         		type: 'BUY_TWO_GET_ONE_FREE',
