@@ -17,6 +17,11 @@
         {
             "name": "fixtures.js",
             "path": "/javascript_template/section_1/practice_4"
+        },
+        {
+            "name": "practice_4.js",
+            "path": "/specs/section_1/",
+            "is_read_only": true
         }
     ],
     "runner": {
