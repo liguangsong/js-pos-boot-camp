@@ -17,19 +17,20 @@ POS收银机 版本：v1
 
 输入格式（样例）：
 
-```javascript
-[
-    'ITEM000001',
-    'ITEM000001',
-    'ITEM000001',
-    'ITEM000001',
-    'ITEM000001',
-    'ITEM000003-2',
-    'ITEM000005',
-    'ITEM000005',
-    'ITEM000005'
-]
-```
+   javascript
+
+		[
+    		'ITEM000001',
+    		'ITEM000001',
+    		'ITEM000001',
+    		'ITEM000001',
+    		'ITEM000001',
+    		'ITEM000003-2',
+    		'ITEM000005',
+    		'ITEM000005',
+    		'ITEM000005'
+		]
+
 其中对'ITEM000003-2'来说,"-"之前的是标准的条形码,"-"之后的是数量。
 当我们购买需要称量的物品的时候,由称量的机器生成此类条形码,收银机负责识别生成小票。
 (当点击"保存并提交代码"按钮的时候，我们会调用函数printInventory将上面的数据作为参数(inputs)传入该函数。)
@@ -68,35 +69,36 @@ POS收银机 版本：v1
 
 2. 每一个商品对象的结构如下（样例）：
 
-   ```javascript
-   {
-      barcode: 'ITEM000000',
-      name: '可口可乐',
-      unit: '瓶',
-      price: 3.00
-   }
-   ```
+	javascript
+
+   	{
+      	barcode: 'ITEM000000',
+      	name: '可口可乐',
+      	unit: '瓶',
+      	price: 3.00
+   	}
+
 
 3. 可使用```loadPromotions()```方法获取全部的促销信息，该方法返回结果为一个包含有促销信息对象的数组（样例）：
 
-   ```javascript
-   [
-      {
-        type: 'BUY_TWO_GET_ONE_FREE',
-        barcodes: [
-          'ITEM000000',
-          'ITEM000001'
-        ]
-      },
-      {
-        type: 'OTHER_PROMOTION',
-        barcodes: [
-          'ITEM000003',
-          'ITEM000004'
-        ]
-      }
-   ]
-   ```
+   javascript
+
+   	[
+      	{
+        	type: 'BUY_TWO_GET_ONE_FREE',
+        	barcodes: [
+          	'ITEM000000',
+          	'ITEM000001'
+        	]
+      	},
+      	{
+        	type: 'OTHER_PROMOTION',
+        	barcodes: [
+          	'ITEM000003',
+          	'ITEM000004'
+        	]
+      	}
+   	]
 
 4. 使用console.log输出(仅允许使用一次)
 5. 应学习并善于使用各种流行浏览器所附带的开发人员工具中的控制台（Console）功能。
