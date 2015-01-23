@@ -52,7 +52,7 @@ describe('practice-1-2', function () {
                 unit: '个',
                 price: 2.00
             }
-        ]
+        ];
     });
 
     it('should print correct text', function () {
