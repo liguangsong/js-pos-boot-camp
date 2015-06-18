@@ -12,7 +12,8 @@
         "order": 30,
         "ico": "/images/JS.PNG",
         "title_ico": "/images/Javascript.png",
-        "version": "2.0.18"
+
+        "version": "2.0.15"
     },
     "relevance":{
         "type":"path",
